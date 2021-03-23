@@ -4,6 +4,7 @@ import { BrowserRouter as Router,
 import  './App.css';
 function App() {
   return (
+  <div className='router'>
     <Router>
       <nav>
         <Link to="/">Home</Link>
@@ -18,6 +19,7 @@ function App() {
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </Router>
+  </div>
   );
 }
 
@@ -29,7 +31,10 @@ const NotFound = () => {
 
 const Home= () => {
   return(
-    <h1> Welcome to Home page</h1>
+    <div className='home'>
+      <h1> Welcome to Home page</h1>
+     
+    </div>
   )
 };
 
